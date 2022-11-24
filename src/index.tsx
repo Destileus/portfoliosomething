@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import SomeExampleComponent from "./components/example/someExampleComponent";
+import Navbar from "./components/example/navbar/navbar";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
 <React.StrictMode>
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path='/' element={<App />}></Route>
         <Route path='example' element={<SomeExampleComponent />} />
