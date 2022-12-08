@@ -8,7 +8,7 @@ const ClickCount: React.FC<ClickCountProps> = () => {
     const [count, setCount] = useState(0);
   return (
     <div className={styles.container}>
-        <p>You clicked {count} times</p>
+        <p>You wasted a millisecond of your life {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Click me
       </button>
